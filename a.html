@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>用户注册</h2>
+	<!-- readonly disabled -->
+	<form action="success.html" method="get">
+		姓名：<input type="text" name="username" value="tom" size="40" maxlength="10" ><br><br>
+		密码：<input type="password" name="password"><br><br>
+		确认密码：<input type="password" name="repassword"><br><br>
+		<!-- 当使用单选按钮时，如果希望形成互斥，一定要给他们设置name属性，并且name属性的值保持一致 -->
+		性别：<input type="radio" name="sex" checked value="male"><img src="images/male.gif" alt="">
+			<input type="radio" name="sex" value="female"><img src="images/female.gif" alt=""><br><br>
+		爱好：<input type="checkbox" name="hobby" checked value="eat">吃饭
+		<input type="checkbox" name="hobby" value="sleep">睡觉
+		<input type="checkbox" name="hobby" value="dadoudou">打豆豆<br><br>
+		文件：<input type="file" name="head" accept="application/pdf"><br>
+		<input type="hidden" name="hid" value="我是隐藏的">
+		<input type="submit" value="注册"><br><br>
+		<input type="reset" value="重置">
+		<input type="image" src="images/submit.gif">
+		<input type="button" value="注册">
+	</form>
+</body>
+</html>
